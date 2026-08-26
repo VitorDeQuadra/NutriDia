@@ -1,2 +1,2 @@
 # NutriDia
-Diário de Nutrição e Reeducação Alimentar
+Diário de Nutrição e Reeducação Alimentarr
