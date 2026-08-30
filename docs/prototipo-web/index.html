@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NutriDia — Login</title>
+<style>
+  :root {
+    --primary: #2E6B4F;
+    --on-primary: #FFFFFF;
+    --primary-container: #B7F0CD;
+    --surface: #FBFDF8;
+    --surface-container: #EFF3EC;
+    --on-surface: #191C1A;
+    --on-surface-variant: #414942;
+    --outline: #717971;
+    --error: #BA1A1A;
+    --radius: 16px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary: #9CD5B0;
+      --on-primary: #003821;
+      --primary-container: #1B5138;
+      --surface: #101410;
+      --surface-container: #1C201C;
+      --on-surface: #E1E3DE;
+      --on-surface-variant: #C0C9C0;
+      --outline: #8A938B;
+      --error: #FFB4AB;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+    background: var(--surface);
+    color: var(--on-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+  }
+
+  /* Formulário vertical centralizado (spec §4.1) */
+  .screen {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .brand { text-align: center; }
+  .logo {
+    width: 72px; height: 72px;
+    margin: 0 auto 16px;
+    border-radius: 24px;
+    background: var(--primary-container);
+    display: grid;
+    place-items: center;
+    font-size: 36px;
+  }
+  .brand h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+  }
+  .brand p {
+    margin: 6px 0 0;
+    font-size: 14px;
+    color: var(--on-surface-variant);
+  }
+
+  form { display: flex; flex-direction: column; gap: 4px; }
+
+  /* OutlinedTextField (Material 3) */
+  .field { position: relative; margin-top: 20px; }
+  .field input {
+    width: 100%;
+    height: 56px;
+    padding: 0 48px 0 16px;
+    font-size: 16px;
+    font-family: inherit;
+    color: var(--on-surface);
+    background: transparent;
+    border: 1px solid var(--outline);
+    border-radius: 4px;
+    outline: none;
+    transition: border-color .15s, border-width .15s;
+  }
+  .field label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 4px;
+    font-size: 16px;
+    color: var(--on-surface-variant);
+    background: var(--surface);
+    pointer-events: none;
+    transition: all .15s ease;
+  }
+  .field input:focus + label,
+  .field input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 12px;
+    color: var(--primary);
+  }
+  .field input:focus {
+    border: 2px solid var(--primary);
+    padding-left: 15px;
+  }
+  .field.invalid input { border-color: var(--error); }
+  .field.invalid label,
+  .field.invalid input:focus + label { color: var(--error); }
+
+  .toggle-pass {
+    position: absolute;
+    right: 4px; top: 50%;
+    transform: translateY(-50%);
+    width: 48px; height: 48px;   /* alvo mínimo de toque 48dp */
+    border: 0; background: none;
+    color: var(--on-surface-variant);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .toggle-pass:hover { background: var(--surface-container); }
+
+  .error-text {
+    min-height: 18px;
+    padding: 4px 16px 0;
+    font-size: 12px;
+    color: var(--error);
+  }
+
+  .link {
+    align-self: flex-end;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary);
+    text-decoration: none;
+    background: none; border: 0;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .link:hover { text-decoration: underline; }
+
+  .btn-primary {
+    margin-top: 8px;
+    height: 52px;
+    border: 0;
+    border-radius: 26px;
+    background: var(--primary);
+    color: var(--on-primary);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: filter .15s;
+  }
+  .btn-primary:hover { filter: brightness(1.08); }
+  .btn-primary:disabled { opacity: .6; cursor: progress; }
+
+  .footer {
+    text-align: center;
+    font-size: 14px;
+    color: var(--on-surface-variant);
+  }
+  .footer .link { align-self: center; min-height: auto; }
+
+  /* Snackbar de feedback */
+  .snackbar {
+    position: fixed;
+    left: 50%; bottom: 24px;
+    transform: translate(-50%, 120%);
+    max-width: 90vw;
+    padding: 14px 20px;
+    border-radius: 8px;
+    background: var(--on-surface);
+    color: var(--surface);
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+    transition: transform .25s ease;
+  }
+  .snackbar.show { transform: translate(-50%, 0); }
+</style>
+</head>
+<body>
+
+<main class="screen">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">🥗</div>
+    <h1>NutriDia</h1>
+    <p>Seu diário alimentar com apoio da comunidade</p>
+  </div>
+
+  <form id="login-form" novalidate>
+    <div class="field" id="field-email">
+      <input type="email" id="email" placeholder=" " autocomplete="email" required>
+      <label for="email">E-mail</label>
+    </div>
+    <div class="error-text" id="error-email"></div>
+
+    <div class="field" id="field-senha">
+      <input type="password" id="senha" placeholder=" " autocomplete="current-password" required>
+      <label for="senha">Senha</label>
+      <button type="button" class="toggle-pass" id="toggle-pass"
+              aria-label="Mostrar senha">👁</button>
+    </div>
+    <div class="error-text" id="error-senha"></div>
+
+    <button type="button" class="link" id="forgot">Esqueci minha senha</button>
+
+    <button type="submit" class="btn-primary" id="submit">Entrar</button>
+  </form>
+
+  <p class="footer">
+    Não tem uma conta?
+    <button type="button" class="link" id="signup">Criar conta</button>
+  </p>
+</main>
+
+<div class="snackbar" id="snackbar" role="status" aria-live="polite"></div>
+
+<script>
+  const form = document.getElementById('login-form');
+  const email = document.getElementById('email');
+  const senha = document.getElementById('senha');
+  const submit = document.getElementById('submit');
+  const snackbar = document.getElementById('snackbar');
+
+  function setError(id, msg) {
+    document.getElementById('field-' + id).classList.toggle('invalid', !!msg);
+    document.getElementById('error-' + id).textContent = msg || '';
+  }
+
+  function toast(msg) {
+    snackbar.textContent = msg;
+    snackbar.classList.add('show');
+    clearTimeout(toast.t);
+    toast.t = setTimeout(() => snackbar.classList.remove('show'), 3000);
+  }
+
+  // Validação inline (spec §5)
+  const emailOk = v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());
+
+  email.addEventListener('blur', () => {
+    if (!email.value.trim()) setError('email', 'Informe seu e-mail');
+    else if (!emailOk(email.value)) setError('email', 'E-mail inválido');
+    else setError('email', '');
+  });
+
+  senha.addEventListener('blur', () => {
+    if (!senha.value) setError('senha', 'Informe sua senha');
+    else if (senha.value.length < 6) setError('senha', 'Mínimo de 6 caracteres');
+    else setError('senha', '');
+  });
+
+  document.getElementById('toggle-pass').addEventListener('click', e => {
+    const visivel = senha.type === 'text';
+    senha.type = visivel ? 'password' : 'text';
+    e.currentTarget.textContent = visivel ? '👁' : '🙈';
+    e.currentTarget.setAttribute('aria-label', visivel ? 'Mostrar senha' : 'Ocultar senha');
+  });
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    let erro = false;
+
+    if (!email.value.trim())        { setError('email', 'Informe seu e-mail'); erro = true; }
+    else if (!emailOk(email.value)) { setError('email', 'E-mail inválido'); erro = true; }
+    else setError('email', '');
+
+    if (!senha.value)                 { setError('senha', 'Informe sua senha'); erro = true; }
+    else if (senha.value.length < 6)  { setError('senha', 'Mínimo de 6 caracteres'); erro = true; }
+    else setError('senha', '');
+
+    if (erro) return;
+
+    // Protótipo: a autenticação real usará Firebase Authentication.
+    submit.disabled = true;
+    submit.textContent = 'Entrando...';
+    setTimeout(() => {
+      submit.disabled = false;
+      submit.textContent = 'Entrar';
+      toast('Login validado! (protótipo — sem backend)');
+    }, 900);
+  });
+
+  document.getElementById('forgot').addEventListener('click',
+    () => toast('Recuperação de senha ainda não implementada.'));
+  document.getElementById('signup').addEventListener('click',
+    () => toast('Tela de cadastro ainda não implementada.'));
+</script>
+
+</body>
+</html>
