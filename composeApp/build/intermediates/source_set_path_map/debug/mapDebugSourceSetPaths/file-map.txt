@@ -1,0 +1,51 @@
+com.nutridia.composeApp-lifecycle-viewmodel-ktx-2.8.7-0 C:\Users\vitor\.gradle\caches\8.11.1\transforms\0092010723ac1921016b9240bc49eb7b\transformed\lifecycle-viewmodel-ktx-2.8.7\res
+com.nutridia.composeApp-ui-text-release-1 C:\Users\vitor\.gradle\caches\8.11.1\transforms\01bee08dede4eb04fe5c9ef7e20c123c\transformed\ui-text-release\res
+com.nutridia.composeApp-lifecycle-livedata-core-2.8.7-2 C:\Users\vitor\.gradle\caches\8.11.1\transforms\11240b5b62666146366794759e720543\transformed\lifecycle-livedata-core-2.8.7\res
+com.nutridia.composeApp-lifecycle-runtime-ktx-release-3 C:\Users\vitor\.gradle\caches\8.11.1\transforms\13ea164de7ce04b0241a3859332244b3\transformed\lifecycle-runtime-ktx-release\res
+com.nutridia.composeApp-lifecycle-viewmodel-release-4 C:\Users\vitor\.gradle\caches\8.11.1\transforms\141dfc337bbb255bbba09b23f8b1f81e\transformed\lifecycle-viewmodel-release\res
+com.nutridia.composeApp-ui-release-5 C:\Users\vitor\.gradle\caches\8.11.1\transforms\19d8be5f1d250d297e56adf9cfc58cf7\transformed\ui-release\res
+com.nutridia.composeApp-ui-backhandler-debug-6 C:\Users\vitor\.gradle\caches\8.11.1\transforms\1b885a368a678fa7ca64b898c3536abe\transformed\ui-backhandler-debug\res
+com.nutridia.composeApp-ui-geometry-release-7 C:\Users\vitor\.gradle\caches\8.11.1\transforms\2f6cf8ae267f5b4549a04ce748ef7e26\transformed\ui-geometry-release\res
+com.nutridia.composeApp-customview-poolingcontainer-1.0.0-8 C:\Users\vitor\.gradle\caches\8.11.1\transforms\3b36efeaec86006e9aaebfc6a8ae01b1\transformed\customview-poolingcontainer-1.0.0\res
+com.nutridia.composeApp-material-release-9 C:\Users\vitor\.gradle\caches\8.11.1\transforms\46b7410ee846a2d76ce637a236b84a96\transformed\material-release\res
+com.nutridia.composeApp-runtime-saveable-release-10 C:\Users\vitor\.gradle\caches\8.11.1\transforms\595f3f26fc15df4c564325fd59e52b24\transformed\runtime-saveable-release\res
+com.nutridia.composeApp-material-icons-core-release-11 C:\Users\vitor\.gradle\caches\8.11.1\transforms\5d6b52ceea278d7d8bcdebf4fe588308\transformed\material-icons-core-release\res
+com.nutridia.composeApp-animation-core-release-12 C:\Users\vitor\.gradle\caches\8.11.1\transforms\655c48d1f1ed8cb0d1ecbc5ae4c762d3\transformed\animation-core-release\res
+com.nutridia.composeApp-core-runtime-2.2.0-13 C:\Users\vitor\.gradle\caches\8.11.1\transforms\694b5d2c873a7ddbb77ed330a1103557\transformed\core-runtime-2.2.0\res
+com.nutridia.composeApp-material-ripple-release-14 C:\Users\vitor\.gradle\caches\8.11.1\transforms\71e51f5ce8b83ff4d0a921504ec5725d\transformed\material-ripple-release\res
+com.nutridia.composeApp-savedstate-ktx-1.2.1-15 C:\Users\vitor\.gradle\caches\8.11.1\transforms\765fb6bc440eb48830314a446ecc0ee2\transformed\savedstate-ktx-1.2.1\res
+com.nutridia.composeApp-runtime-release-16 C:\Users\vitor\.gradle\caches\8.11.1\transforms\7669c27f2b31ff9dcc3e29c92aef7db6\transformed\runtime-release\res
+com.nutridia.composeApp-startup-runtime-1.1.1-17 C:\Users\vitor\.gradle\caches\8.11.1\transforms\78a2f22d2f572781ff91e62f1bfbc2f7\transformed\startup-runtime-1.1.1\res
+com.nutridia.composeApp-ui-tooling-release-18 C:\Users\vitor\.gradle\caches\8.11.1\transforms\7cd051bcf652f87f354453457876a212\transformed\ui-tooling-release\res
+com.nutridia.composeApp-lifecycle-process-2.8.7-19 C:\Users\vitor\.gradle\caches\8.11.1\transforms\82ec83fb69a4e59cdb48b9d1c1ec456f\transformed\lifecycle-process-2.8.7\res
+com.nutridia.composeApp-animation-release-20 C:\Users\vitor\.gradle\caches\8.11.1\transforms\87f8080e80fe3840d626ea577af0d2bb\transformed\animation-release\res
+com.nutridia.composeApp-activity-ktx-1.9.3-21 C:\Users\vitor\.gradle\caches\8.11.1\transforms\894c04a79e4d7fd1fd9c5e1d5f80f27b\transformed\activity-ktx-1.9.3\res
+com.nutridia.composeApp-activity-compose-1.9.3-22 C:\Users\vitor\.gradle\caches\8.11.1\transforms\8ab6cc1f7d595ec63357ece5bde40a99\transformed\activity-compose-1.9.3\res
+com.nutridia.composeApp-core-ktx-1.13.1-23 C:\Users\vitor\.gradle\caches\8.11.1\transforms\96dc97a6b692cf9be3904ea643929938\transformed\core-ktx-1.13.1\res
+com.nutridia.composeApp-foundation-release-24 C:\Users\vitor\.gradle\caches\8.11.1\transforms\9ad1abb74e218877216df9d258a788e1\transformed\foundation-release\res
+com.nutridia.composeApp-lifecycle-runtime-compose-release-25 C:\Users\vitor\.gradle\caches\8.11.1\transforms\9ed617c6b6e51159902028444f3c1586\transformed\lifecycle-runtime-compose-release\res
+com.nutridia.composeApp-graphics-path-1.0.1-26 C:\Users\vitor\.gradle\caches\8.11.1\transforms\a0b944fb0ab0c51e56008fa7edb3e397\transformed\graphics-path-1.0.1\res
+com.nutridia.composeApp-annotation-experimental-1.4.1-27 C:\Users\vitor\.gradle\caches\8.11.1\transforms\a6c3108d882dded884d76fe6b0288e80\transformed\annotation-experimental-1.4.1\res
+com.nutridia.composeApp-savedstate-1.2.1-28 C:\Users\vitor\.gradle\caches\8.11.1\transforms\a775aabe486b89e47588414eb1d217c0\transformed\savedstate-1.2.1\res
+com.nutridia.composeApp-activity-1.9.3-29 C:\Users\vitor\.gradle\caches\8.11.1\transforms\aef40998ee609f96d8304dace7022434\transformed\activity-1.9.3\res
+com.nutridia.composeApp-lifecycle-runtime-release-30 C:\Users\vitor\.gradle\caches\8.11.1\transforms\b4d178ce87ddebfa7d4f508e092b4000\transformed\lifecycle-runtime-release\res
+com.nutridia.composeApp-ui-tooling-data-release-31 C:\Users\vitor\.gradle\caches\8.11.1\transforms\b881f80f41216a7c3526488cfc892e88\transformed\ui-tooling-data-release\res
+com.nutridia.composeApp-emoji2-1.4.0-32 C:\Users\vitor\.gradle\caches\8.11.1\transforms\c3ab42f0f1886ee918ab31bb207db040\transformed\emoji2-1.4.0\res
+com.nutridia.composeApp-core-1.13.1-33 C:\Users\vitor\.gradle\caches\8.11.1\transforms\c74aff3275d631212a56eb48c19eba70\transformed\core-1.13.1\res
+com.nutridia.composeApp-lifecycle-viewmodel-savedstate-2.8.7-34 C:\Users\vitor\.gradle\caches\8.11.1\transforms\ccc33cbb2e8719970fac806fe058a4f2\transformed\lifecycle-viewmodel-savedstate-2.8.7\res
+com.nutridia.composeApp-ui-unit-release-35 C:\Users\vitor\.gradle\caches\8.11.1\transforms\de9627c6a44bddc7e08691a1a6bfbfb0\transformed\ui-unit-release\res
+com.nutridia.composeApp-foundation-layout-release-36 C:\Users\vitor\.gradle\caches\8.11.1\transforms\df665ccc97e5b0a132559434186898a9\transformed\foundation-layout-release\res
+com.nutridia.composeApp-profileinstaller-1.4.0-37 C:\Users\vitor\.gradle\caches\8.11.1\transforms\df77c4cea245d6bb2a75c5492fa35944\transformed\profileinstaller-1.4.0\res
+com.nutridia.composeApp-ui-util-release-38 C:\Users\vitor\.gradle\caches\8.11.1\transforms\e8759493706087df4780c2f7456d7431\transformed\ui-util-release\res
+com.nutridia.composeApp-ui-tooling-preview-release-39 C:\Users\vitor\.gradle\caches\8.11.1\transforms\e8b28e566d03140972996b7fa41a3ffb\transformed\ui-tooling-preview-release\res
+com.nutridia.composeApp-ui-graphics-release-40 C:\Users\vitor\.gradle\caches\8.11.1\transforms\f26e82c32138aadc2fc5928baa53c710\transformed\ui-graphics-release\res
+com.nutridia.composeApp-material3-release-41 C:\Users\vitor\.gradle\caches\8.11.1\transforms\ff8a64013d34ea9f916a297e29daf5a0\transformed\material3-release\res
+com.nutridia.composeApp-pngs-42 D:\Faculdade\Dev Mobile\NutriDia\composeApp\build\generated\res\pngs\debug
+com.nutridia.composeApp-resValues-43 D:\Faculdade\Dev Mobile\NutriDia\composeApp\build\generated\res\resValues\debug
+com.nutridia.composeApp-packageDebugResources-44 D:\Faculdade\Dev Mobile\NutriDia\composeApp\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.nutridia.composeApp-packageDebugResources-45 D:\Faculdade\Dev Mobile\NutriDia\composeApp\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.nutridia.composeApp-debug-46 D:\Faculdade\Dev Mobile\NutriDia\composeApp\build\intermediates\merged_res\debug\mergeDebugResources
+com.nutridia.composeApp-androidDebug-47 D:\Faculdade\Dev Mobile\NutriDia\composeApp\src\androidDebug\res
+com.nutridia.composeApp-androidMain-48 D:\Faculdade\Dev Mobile\NutriDia\composeApp\src\androidMain\res
+com.nutridia.composeApp-debug-49 D:\Faculdade\Dev Mobile\NutriDia\composeApp\src\debug\res
+com.nutridia.composeApp-main-50 D:\Faculdade\Dev Mobile\NutriDia\composeApp\src\main\res

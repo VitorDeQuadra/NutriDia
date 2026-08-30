@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.nutridia.composeApp-mergeDebugResources-44:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\vitor\\.gradle\\caches\\8.11.1\\transforms\\ff8a64013d34ea9f916a297e29daf5a0\\transformed\\material3-release\\res\\values-v30\\values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}
