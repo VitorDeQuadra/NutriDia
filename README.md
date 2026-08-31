@@ -89,5 +89,5 @@ Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
 
 ## Autores
 
-Vitor De Quadra
-Rayana Calumby de Oliveira
+Vitor De Quadra.
+Rayana Calumby de Oliveira.
