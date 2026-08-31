@@ -87,6 +87,7 @@ app/
 
 Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
 
-## Autor
+## Autores
 
 Vitor De Quadra
+Rayana Calumby de Oliveira
