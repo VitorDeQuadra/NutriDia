@@ -13,7 +13,7 @@ Reeducação alimentar costuma falhar não por falta de informação, mas por fa
 1. **Diário pessoal** — registro rápido de refeições, acompanhamento de metas (calorias, água, hábitos) e visualização de progresso ao longo do tempo.
 2. **Comunidade** — grupos temáticos, desafios coletivos, feed de posts entre usuários e conteúdo educativo (artigos e receitas), criando senso de pertencimento e responsabilidade compartilhada.
 
-Para o detalhamento de personas, cenários de uso, fluxos de navegação e telas necessárias, veja [docs/CENARIOS_E_TELAS.md](docs/CENARIOS_E_TELAS.md).
+A especificação completa — 17 requisitos funcionais e 10 não funcionais, com 38 histórias de usuário e 114 critérios de aceitação — está em [docs/REQUISITOS_RESUMIDO.docx](docs/REQUISITOS_RESUMIDO.docx).
 
 ## Funcionalidades principais
 
@@ -24,6 +24,19 @@ Para o detalhamento de personas, cenários de uso, fluxos de navegação e telas
 - **Conteúdo educativo** — artigos e receitas saudáveis curados, filtráveis por restrição alimentar.
 - **Gamificação** — conquistas, sequências (streaks) e progresso visual para reforçar consistência.
 - **Notificações e lembretes** — lembretes de refeição, hidratação e atualizações da comunidade.
+
+## Telas
+
+Protótipo das interfaces, seguindo Material 3 no tema definido em `core/theme/Color.kt`.
+
+| | | |
+|:---:|:---:|:---:|
+| <img src="docs/ui/03-entrar.png" width="230"> | <img src="docs/ui/06-diario-do-dia.png" width="230"> | <img src="docs/ui/07-adicionar-refeicao.png" width="230"> |
+| **Entrar** | **Diário do dia** | **Adicionar refeição** |
+| <img src="docs/ui/11-progresso.png" width="230"> | <img src="docs/ui/12-mural-da-comunidade.png" width="230"> | <img src="docs/ui/21-perfil.png" width="230"> |
+| **Progresso** | **Mural da comunidade** | **Perfil** |
+
+As 25 telas do aplicativo estão em [docs/ui/](docs/ui/), numeradas na ordem do fluxo.
 
 ## Tecnologias
 
@@ -81,7 +94,8 @@ app/
 
 ## Documentação adicional
 
-- [Cenários, fluxos e telas](docs/CENARIOS_E_TELAS.md)
+- [Requisitos, histórias e critérios de aceitação](docs/REQUISITOS_RESUMIDO.docx) — especificação do sistema.
+- [Telas do aplicativo](docs/ui/) — as 25 interfaces em PNG.
 
 ## Licença
 
