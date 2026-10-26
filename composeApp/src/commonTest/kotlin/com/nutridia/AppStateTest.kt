@@ -1,4 +1,3 @@
-// ORIGEM: CODEX | Data de criacao: 2026-10-20
 package com.nutridia
 
 import com.nutridia.data.*

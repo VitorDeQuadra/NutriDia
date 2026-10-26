@@ -40,9 +40,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.material3.Button
-// INICIO ALTERACAO CODEX | Data: 2026-10-20
 import com.nutridia.core.components.IconAction
-// FIM ALTERACAO CODEX
 
 /**
  * Tela de Login (spec §4.1) — formulário vertical centralizado com
@@ -52,16 +50,12 @@ import com.nutridia.core.components.IconAction
 fun LoginScreen(
     modifier: Modifier = Modifier,
     viewModel: LoginViewModel = remember { LoginViewModel() },
-    // INICIO ALTERACAO CODEX | Data: 2026-10-20
     onValidated: (String) -> Unit = {},
     onSignUp: (() -> Unit)? = null,
-    // FIM ALTERACAO CODEX
 ) {
     val state = viewModel.uiState
     val snackbarHostState = remember { SnackbarHostState() }
-    // INICIO ALTERACAO CODEX | Data: 2026-10-20
     LaunchedEffect(state.validado) { if (state.validado) onValidated(state.email.trim()) }
-    // FIM ALTERACAO CODEX
 
     LaunchedEffect(state.mensagem) {
         state.mensagem?.let {
@@ -103,10 +97,8 @@ fun LoginScreen(
                         keyboardType = KeyboardType.Email,
                         imeAction = ImeAction.Next,
                     ),
-                    // INICIO ALTERACAO CODEX | Data: 2026-10-20
                     shape = RoundedCornerShape(14.dp),
                     leadingIcon = { Text("✉") },
-                    // FIM ALTERACAO CODEX
                     modifier = Modifier.fillMaxWidth(),
                 )
 
@@ -123,14 +115,10 @@ fun LoginScreen(
                         PasswordVisualTransformation()
                     },
                     trailingIcon = {
-                        // INICIO ALTERACAO CODEX | Data: 2026-10-20
                         IconAction(if (state.senhaVisivel) "◉" else "◎", "Mostrar ou ocultar senha", viewModel::alternarVisibilidadeSenha)
-                        // FIM ALTERACAO CODEX
                     },
-                    // INICIO ALTERACAO CODEX | Data: 2026-10-20
                     shape = RoundedCornerShape(14.dp),
                     leadingIcon = { Text("🔒") },
-                    // FIM ALTERACAO CODEX
                     keyboardOptions = KeyboardOptions(
                         keyboardType = KeyboardType.Password,
                         imeAction = ImeAction.Done,
@@ -175,9 +163,7 @@ fun LoginScreen(
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
-                    // INICIO ALTERACAO CODEX | Data: 2026-10-20
                     TextButton(onClick = onSignUp ?: viewModel::criarConta) {
-                    // FIM ALTERACAO CODEX
                         Text("Criar conta")
                     }
                 }
@@ -191,9 +177,7 @@ private fun Marca() {
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
         Surface(
             shape = RoundedCornerShape(24.dp),
-            // INICIO ALTERACAO CODEX | Data: 2026-10-20
             color = MaterialTheme.colorScheme.primary,
-            // FIM ALTERACAO CODEX
             modifier = Modifier.size(72.dp),
         ) {
             Box(contentAlignment = Alignment.Center) {
@@ -204,9 +188,7 @@ private fun Marca() {
         Spacer(Modifier.height(16.dp))
 
         Text(
-            // INICIO ALTERACAO CODEX | Data: 2026-10-20
             text = "Bem-vindo de volta",
-            // FIM ALTERACAO CODEX
             style = MaterialTheme.typography.headlineMedium,
             fontWeight = FontWeight.SemiBold,
             color = MaterialTheme.colorScheme.onSurface,
@@ -215,9 +197,7 @@ private fun Marca() {
         Spacer(Modifier.height(6.dp))
 
         Text(
-            // INICIO ALTERACAO CODEX | Data: 2026-10-20
             text = "Entre para continuar seu diário",
-            // FIM ALTERACAO CODEX
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             textAlign = TextAlign.Center,

@@ -11,9 +11,7 @@ data class LoginUiState(
     val senhaVisivel: Boolean = false,
     val carregando: Boolean = false,
     val mensagem: String? = null,
-    // INICIO ALTERACAO CODEX | Data: 2026-10-20
     val validado: Boolean = false,
-    // FIM ALTERACAO CODEX
 ) {
     val podeEnviar: Boolean
         get() = !carregando && email.isNotBlank() && senha.isNotBlank()

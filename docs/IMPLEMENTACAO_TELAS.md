@@ -1,4 +1,3 @@
-<!-- // ORIGEM: CODEX | Data de criacao: 2026-10-20 -->
 # Checklist das interfaces
 
 Referências: `docs/ui/01-*.png` a `25-*.png`. Implementação em Compose Multiplatform, Android e Web.

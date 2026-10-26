@@ -1,4 +1,3 @@
-// ORIGEM: CODEX | Data de criacao: 2026-10-20
 package com.nutridia.feature.profile
 
 import androidx.compose.foundation.layout.*
@@ -35,9 +34,9 @@ fun ProfileScreen(state: AppState) {
         badges.chunked(4).forEach { row ->
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 row.forEach { (symbol, label) ->
-                    Surface(Modifier.weight(1f), shape = CardShape, color = cardColor(), onClick = {
+                    Surface(onClick = {
                         state.notify(if (symbol == "🔒") "Medalha bloqueada: alcance o marco $label. Conquistas ilustrativas." else "Conquista $label · demonstração")
-                    }) {
+                    }, modifier = Modifier.weight(1f), shape = CardShape, color = cardColor()) {
                         Column(Modifier.padding(vertical = 16.dp, horizontal = 4.dp), horizontalAlignment = Alignment.CenterHorizontally) {
                             Text(symbol, fontSize = 25.sp); Text(label, fontSize = 11.sp)
                         }

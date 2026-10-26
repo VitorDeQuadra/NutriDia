@@ -1,4 +1,3 @@
-// ORIGEM: CODEX | Data de criacao: 2026-10-20
 package com.nutridia.feature.goals
 
 import androidx.compose.foundation.Canvas

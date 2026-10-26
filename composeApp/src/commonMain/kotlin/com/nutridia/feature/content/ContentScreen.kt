@@ -1,4 +1,3 @@
-// ORIGEM: CODEX | Data de criacao: 2026-10-20
 package com.nutridia.feature.content
 
 import androidx.compose.foundation.layout.*
@@ -15,7 +14,7 @@ import com.nutridia.navigation.*
 
 @Composable
 private fun ContentCard(item: ContentItem, state: AppState, modifier: Modifier = Modifier, featured: Boolean = false) {
-    Surface(modifier, shape = CardShape, color = cardColor(), onClick = { state.selectedContent = item; state.navigate(Destination.RecipeDetail) }) {
+    Surface(onClick = { state.selectedContent = item; state.navigate(Destination.RecipeDetail) }, modifier = modifier, shape = CardShape, color = cardColor()) {
         Column {
             Surface(Modifier.fillMaxWidth().height(if (featured) 110.dp else 90.dp), color = MaterialTheme.colorScheme.primaryContainer) {
                 Box(contentAlignment = Alignment.Center) { Text(item.symbol, fontSize = if (featured) 42.sp else 32.sp) }

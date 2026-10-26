@@ -42,11 +42,9 @@ kotlin {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
         }
-        // INICIO ALTERACAO CODEX | Data: 2026-10-20
         commonTest.dependencies {
             implementation(kotlin("test"))
         }
-        // FIM ALTERACAO CODEX
     }
 }
 

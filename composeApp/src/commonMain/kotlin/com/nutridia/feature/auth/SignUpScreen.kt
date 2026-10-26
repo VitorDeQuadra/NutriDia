@@ -1,4 +1,3 @@
-// ORIGEM: CODEX | Data de criacao: 2026-10-20
 package com.nutridia.feature.auth
 
 import androidx.compose.foundation.layout.*
@@ -8,6 +7,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
+import androidx.compose.ui.unit.dp
 import com.nutridia.core.components.*
 import com.nutridia.data.AppState
 import com.nutridia.navigation.Destination

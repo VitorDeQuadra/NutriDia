@@ -1,4 +1,3 @@
-// ORIGEM: CODEX | Data de criacao: 2026-10-20
 package com.nutridia.data
 
 data class Food(val id: Int, val name: String, val symbol: String, val kcal: Double,
