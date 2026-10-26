@@ -43,6 +43,9 @@ class LoginViewModel {
 
         // Protótipo: sem backend. A autenticação real será via Firebase Auth.
         uiState = uiState.copy(
+            // INICIO ALTERACAO CODEX | Data: 2026-10-20
+            validado = true,
+            // FIM ALTERACAO CODEX
             emailErro = null,
             senhaErro = null,
             mensagem = "Login validado! (protótipo — sem backend)",
