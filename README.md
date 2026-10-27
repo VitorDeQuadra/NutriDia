@@ -105,3 +105,4 @@ Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
 
 Vitor De Quadra.
 Rayana Calumby de Oliveira.
+Dalson Schmidt.
